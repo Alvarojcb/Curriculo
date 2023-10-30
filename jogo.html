@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jogo.css">
+  <title>Documento</title>
+</head>
+<body>
+  <h1>Bulls and Cows</h1>
+  <input type="number" id="guessInput" min="1111" max="9999" placeholder="ex: 4562" onkeydown="if (event.keyCode === 13) document.getElementById('submitButton').click()">
+  <input type="submit" id="submitButton" value="Adivinhar" onclick="checkGuess()">
+  <input type="submit" id="clearButton" value="Limpar" onclick="clearLogs()">
+  <p></p>
+  <textarea name="logs" id="logsArea" cols="60" rows="17" readonly="true"></textarea>
+  <script src="jogo.js"></script>
+</body>
+</html>
